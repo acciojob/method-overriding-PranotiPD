@@ -7,14 +7,14 @@ public class Main {
         obj.meth();
     }
     static class A{
-        void meth(){
-            System.out.println("Invoking method from class A");
+        String meth(){
+            return "Invoking method from class A";
         }
     }
     static class B extends A{
-        void meth(){
+        String meth(){
             super.meth();
-            System.out.println("Method is overridden in Extendend class B");
+            return "Method is overridden in Extendend class B";
         }
     }
 }
